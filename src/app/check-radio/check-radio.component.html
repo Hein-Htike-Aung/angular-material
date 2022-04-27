@@ -1,0 +1,23 @@
+<div class="container">
+  <!-- Checkbox -->
+  <mat-checkbox #showDetails (change)="onChange($event)">
+    Show Details
+  </mat-checkbox>
+  <br />
+  <mat-checkbox color="primary" labelPosition="before">
+    SubScribe 2
+  </mat-checkbox>
+  <br />
+
+  <!-- Radio -->
+  <mat-radio-group>
+    <mat-radio-button value="angular">Angular</mat-radio-button>
+    <mat-radio-button value="react">React</mat-radio-button>
+  </mat-radio-group>
+
+  <div *ngIf="showDetails.checked">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem atque cumque
+    amet beatae dolorem ipsam doloremque ducimus consectetur odio! Id, amet
+    quibusdam eius quidem eos natus dolor delectus esse recusandae.
+  </div>
+</div>

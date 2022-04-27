@@ -1,0 +1,43 @@
+<div class="container">
+  <mat-horizontal-stepper linear>
+    <mat-step label="shipping Address" [completed]="completeShippingAddress">
+      <p>Shipping Address Details</p>
+      <button mat-button matStepperNext>Next</button>
+      <button mat-button (click)="showBillingAddress()">Complete</button>
+    </mat-step>
+    <mat-step label="Billing Address" [completed]="completeBillingAddress">
+      <p>Billing Address Details</p>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+        <button mat-button (click)="showPlaceOrder()">Complete</button>
+      </div>
+    </mat-step>
+    <mat-step label="place order">
+      <p>Plac Order</p>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button matStepperNext>Next</button>
+    </mat-step>
+  </mat-horizontal-stepper>
+
+  <mat-divider></mat-divider>
+
+  <mat-vertical-stepper linear>
+    <mat-step label="shipping Address">
+      <p>Shipping Address Details</p>
+      <button mat-button matStepperNext>Next</button>
+    </mat-step>
+    <mat-step label="Billing Address" optional>
+      <p>Billing Address Details</p>
+      <div>
+        <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </mat-step>
+    <mat-step label="place order">
+      <p>Place Order</p>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button matStepperNext>Next</button>
+    </mat-step>
+  </mat-vertical-stepper>
+</div>

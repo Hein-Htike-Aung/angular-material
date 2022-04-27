@@ -1,0 +1,192 @@
+<mat-tab-group>
+  <mat-tab label="Part-1">
+    <mat-toolbar class="justify-content-center mb-5">
+      <ul class="nav">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/buttons']"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Buttons</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/typography']"
+            routerLinkActive="active"
+            >Typography</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/icon']" routerLinkActive="active"
+            >Icons</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/badges']"
+            routerLinkActive="active"
+            >Badges</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/progress-spinner']"
+            routerLinkActive="active"
+            >Progress-Spinner</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/_navbar']"
+            routerLinkActive="active"
+            >Navbar</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/side-nav']"
+            routerLinkActive="active"
+            >side-nav</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/menu']" routerLinkActive="active"
+            >Menu</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/lists']"
+            routerLinkActive="active"
+            >Lists</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/grids']"
+            routerLinkActive="active"
+            >Grids</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/expansion-panel']"
+            routerLinkActive="active"
+            >expansion-panel</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/cards']"
+            routerLinkActive="active"
+            >cards</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/tabs']" routerLinkActive="active"
+            >Tabs</a
+          >
+        </li>
+      </ul>
+    </mat-toolbar>
+  </mat-tab>
+  <mat-tab label="Part-2">
+    <mat-toolbar class="justify-content-center mb-5">
+      <ul class="nav">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/stepper']"
+            routerLinkActive="active"
+            >Stepper</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/inputs']"
+            routerLinkActive="active"
+            >Inputs</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/check-radio']"
+            routerLinkActive="active"
+            >Check-Radio</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/autocomplete']"
+            routerLinkActive="active"
+            >Autocomplete</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/datepicker']"
+            routerLinkActive="active"
+            >Date Picker</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/tooltip']"
+            routerLinkActive="active"
+            >Tool Tip</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/snackbar']"
+            routerLinkActive="active"
+            >Snack Bar</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/dialogs']"
+            routerLinkActive="  active"
+            >Dialogs</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/data-table']"
+            routerLinkActive="  active"
+            >Data Table</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/virtual-scrolling']"
+            routerLinkActive="  active"
+            >virtual-scrolling</a
+          >
+        </li>
+      </ul>
+    </mat-toolbar>
+  </mat-tab>
+</mat-tab-group>
+
+<router-outlet></router-outlet>

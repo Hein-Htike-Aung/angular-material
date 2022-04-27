@@ -1,0 +1,19 @@
+<!-- Click Outside of the sidenav to disappear -->
+<mat-sidenav-container>
+  <!-- mode = over,side,push -->
+  <mat-sidenav
+    #sidenav
+    (opened)="log('Opened')"
+    (closed)="log('Closed')"
+    mode="side"
+    [(opened)]="openSideBar"
+  >
+    Side Nav
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <button (click)="openSideBar = !openSideBar">Customize Toogle</button>
+    <button (click)="sidenav.open()">Open</button>
+    <button (click)="sidenav.close()">Close</button>
+    <button (click)="sidenav.toggle()">Toogle</button>
+  </mat-sidenav-content>
+</mat-sidenav-container>
